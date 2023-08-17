@@ -1,0 +1,6 @@
+<div>
+  <button [ngClass]="type === 1 ? 'btn1' : '' || type === 2 ? 'btn btn-info' : '' "> 
+    <i [ngClass]="iconClass" *ngIf="iconShow == true"></i> 
+    {{txt}} 
+  </button>
+</div>

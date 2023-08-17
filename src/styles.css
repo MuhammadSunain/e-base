@@ -1,1 +1,262 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'ag-grid-community/styles/ag-grid.css';
+@import 'ag-grid-community/styles/ag-theme-alpine.css';
+
+
+.ag-header-cell-resize::after {
+    height: 12px !important;
+    width: 1px !important;
+    top: 4px !important;
+}
+
+.ag-body-viewport.ag-layout-normal.ag-row-no-animation {
+    background: #fff !important;
+}
+
+.ag-header-cell.ag-floating-filter.ag-focus-managed {
+    background: #fff;
+}
+
+.ag-header-cell.ag-focus-managed {
+    background: #ffff;
+}
+
+.ag-theme-alpine::-webkit-scrollbar {
+    height: 9px;
+    border-radius: 10px;
+}
+
+.ag-header-row {
+    height: 20px !important;
+    background-color: #fff;
+}
+
+.ag-header-cell.ag-focus-managed {
+    height: 21px !important;
+}
+
+.ag-header-cell-text {
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.ag-header-cell {
+    display: grid !important;
+}
+
+.ag-theme-balham .ag-header-cell,
+.ag-theme-balham .ag-header-group-cell {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.ag-header-row-floating-filter {
+    height: 40px !important;
+    top: 20px Im !important;
+}
+
+.ag-floating-filter-body {
+    width: 100%;
+}
+
+.ag-text-field-input {
+    height: 14.5px !important;
+    margin: 2px 0 !important;
+    min-height: 15.5px !important;
+    border-radius: 1px !important;
+}
+
+.ag-text-field-input:focus {
+    box-shadow: 0 0 2px 1px #719ece !important;
+    border-color: #719ece !important;
+}
+
+.ag-icon-menu {
+    display: none !important;
+}
+
+.ag-center-cols-viewport {
+    background: #fff;
+}
+
+.ag-theme-alpine .ag-row {
+    /* height: 25px !important; */
+    font-size: 11px !important;
+    font-weight: 600 !important;
+}
+
+.ag-cell {
+    line-height: 24px !important;
+}
+
+.ag-cell-value,
+.ag-group-value {
+    overflow: visible !important;
+}
+
+.ag-row,
+.ag-header-container {
+    background: #fff !important;
+}
+
+.color-main {
+    color: #2b92d5 !important;
+}
+
+
+/* .ag-theme-alpine .ag-ltr .ag-cell{
+      border-right: 1px solid red !important;
+    } */
+
+.my-class {
+    border-right: 1px solid #bdc3c7 !important;
+}
+
+.ag-header-viewport {
+    background: #fff !important;
+}
+
+
+/* .br-after::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 10px;
+      background: #ddd;
+      right: 0;
+    } */
+
+.ag-header-cell.ag-header-cell-sortable.ag-focus-managed::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 11px;
+    background: #bdc3c7;
+    right: 0;
+}
+
+.ag-floating-filter::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 11px;
+    background: #bdc3c7;
+    right: 0;
+}
+
+.br-grid {
+    border-right: 1px solid #ddd !important;
+}
+
+span.ag-icon.ag-icon-asc,
+span.ag-icon.ag-icon-desc {
+    font-size: 12px;
+}
+
+span.ag-icon.ag-icon-filter {
+    display: none !important;
+}
+
+.ag-theme-balham {
+    background-color: transparent;
+    margin-top: -30px;
+}
+
+.ag-paging-panel>span {
+    color: #287fc4 !important;
+    font-size: 12px;
+    margin: 0;
+}
+
+.ag-paging-button {
+    padding: 5px 9px !important;
+    cursor: pointer !important;
+    margin: 0;
+    height: 24px;
+}
+
+.ag-floating-filter-input::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    right: -17px;
+    height: 70%;
+    background: #ddd;
+}
+
+.ag-paging-button:hover {
+    background: rgba(100, 194, 255, 0.3215686275) !important;
+}
+
+.ag-root-wrapper {
+    overflow: visible;
+}
+
+.ag-theme-alpine .ag-row:hover {
+    background: #ecf4ff !important;
+}
+
+/* .ag-paging-panel {
+    position: absolute !important;
+    top: -25px !important;
+    right: 134px !important;
+    height: 25px;
+    border-left: 1px solid #bdc3c7;
+    border-right: 1px solid #bdc3c7;
+    border-top: none !important;
+} */
+
+.ag-paging-button {
+    color: #287fc4 !important;
+}
+
+.ag-paging-button .ag-icon {
+    font-size: 14px;
+}
+
+.ag-checkbox-input-wrapper {
+    margin-left: -7px;
+    box-shadow: 0px 0px 1px 1px #ddd;
+    margin-top: 2px;
+    border: 1px solid #bdc3c7;
+}
+
+.ag-checked::after {
+    content: var(--ag-icon-font-code-checkbox-unchecked, "\f00c") !important;
+    font-family: 'FontAwesome';
+    color: var(--ecm-main) !important;
+    font-size: 13px;
+    left: 1px !important;
+}
+
+.ag-checkbox-input-wrapper::after {
+    content: "";
+    /* font-family: 'FontAwesome'; */
+    color: var(--ag-checkbox-unchecked-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.ag-checkbox-input-wrapper.ag-indeterminate::after {
+    content: "\f068";
+    font-size: 14px;
+    font-family: "FontAwesome";
+    color: #7f8c8d;
+    position: absolute;
+    top: 0;
+    left: 2px;
+    pointer-events: none;
+}
+
+.ag-row-selected::before {
+    background: none !important;
+}
+
+.ag-checked {
+    border: 1px solid var(--ecm-main);
+}
+
+span.ag-paging-row-summary-panel {
+    display: none;
+}
